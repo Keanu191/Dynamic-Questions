@@ -1,0 +1,22 @@
+/*
+30074191 / Keanu Farro
+*/
+
+/*
+Navbar
+*/
+.navbar {
+    height: 75px;
+    background-color: black;
+}
+
+.content {
+    display: flex;
+    margin-top: 120px !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+}
+
