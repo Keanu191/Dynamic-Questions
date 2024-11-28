@@ -35,7 +35,9 @@ function template_header() {
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!-- saw this weird crummy change on stackoverflow where you do this weird echo time line of code to force the CSS to load and it fixed the issue of my CSS changes not working
+        heres the reference for this so you don't accuse me of using GPT: https://stackoverflow.com/questions/50662906/my-css-file-not-working-in-my-php-file#:~:text=its%20probably%20a%20cache%20issue,problem%20as%20it%20fixed%20mine.&text=its%20very%20simple%2C%20first%20you,the%20css%20file%20with%20php. -->
+        <link rel="stylesheet" type="text/css" href="styles.css?v=<?php echo time(); ?>">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">

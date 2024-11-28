@@ -20,3 +20,13 @@ Navbar
     width: 100%;
 }
 
+.btn-secondary
+{
+    /*
+    28/11/2024
+    display: block was being overridden by bootstrap's css according to inspect element so an important tag must be used to make the dropdown go to the center
+    */
+    display: block !important;
+    margin: auto;
+}
+
